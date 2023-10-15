@@ -94,7 +94,6 @@ button {
 }
 
 #user-info {
-	border: 5px solid red;
 	grid-row: 2 / 3;
 	margin: 15px;
 	display: grid;
@@ -116,7 +115,14 @@ button {
 	border: 5px solid red;
 }
 .card {
-	border: 5px solid red;
+	background-color: white;
+	border-left: 5px solid orange;
+	padding: 25px 15px;
+
+}
+.card .icons {
+	float: right;
+	margin: 25px 0 0;
 }
 
 #announcements-container {
