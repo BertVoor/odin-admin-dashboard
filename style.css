@@ -29,18 +29,37 @@
 }
 
 .icon {
+	width: 32px;
+	height: 32px;
+	margin: 6px;
+}
+.icon.light {
 	fill: white;
-	width: 24px;
-	height: 24px;
+}
+.icon.dark {
+	fill: black;
 }
 
 header {
-	background-color: pink;
+	background-color: white;
 	grid-area: 1 / 2 / 2 / -1;
 	display: grid;
 	grid-template-rows: 1fr 2fr;
 }
 
+#searchbar {
+	/* border: 5px solid red; */
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr 30fr 1fr 1fr 4fr;
+	align-items: center;
+	margin: 15px;
+	gap: 15px;
+}
+.searchfield{
+	width: 33vw;
+	height: 1.5rem;
+}
 #main-content {
 	background-color: aqua;
 	padding: 50px;
@@ -51,12 +70,14 @@ header {
 	gap: 50px;
 }
 
-#searchbar {
-	border: 10px solid red;
-	grid-row: 1 / 2;
+.profileThumbnail{
+	width: 50px;
+	height: auto;
+	border-radius: 50%;
 }
+
 #user-info {
-	border: 10px solid red;
+	border: 5px solid red;
 	grid-row: 2 / 3;
 }
 
